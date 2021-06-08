@@ -1,6 +1,11 @@
 (function () {
     'use strict';
 
+    // function setTextBoxValues() {
+    //     document.getElementById('transmissionBox').value = 0.60;
+    // }
+
+
     function noop() { }
     function add_location(element, file, line, column, char) {
         element.__svelte_meta = {
@@ -23029,6 +23034,7 @@
     			t146 = text("%");
     			t147 = space();
     			input0 = element("input");
+                // setButton = element("button")
     			t148 = space();
     			div70 = element("div");
 
@@ -23898,11 +23904,14 @@
     			attr_dev(input0, "class", "");
                 attr_dev(input0, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
     			attr_dev(input0, "type", "number");
+                attr_dev(input0, "id", "transmissionBox")
                 // attr_dev(input0, "placeholder", "0.660")
     			attr_dev(input0, "min", "0");
     			attr_dev(input0, "max", "1");
     			attr_dev(input0, "step", "0.01");
     			add_location(input0, file$3, 845, 14, 29824);
+                // attr_dev(setButton, "onClick", "setTextBoxValues();")
+                // add_location(setButton, file$3, 850, 16, 29667);
     			set_style(div65, "pointer-events", "all");
     			add_location(div65, file$3, 843, 14, 29666);
     			attr_dev(div66, "class", "caption svelte-1vzb36m");
@@ -23994,9 +24003,9 @@
                 // attr_dev(input1, "placeholder", )
     			// set_style(input1, "margin-bottom", "8px");
     			// attr_dev(input1, "type", "range");
-    			attr_dev(input1, "min", 5);
-    			attr_dev(input1, "max", "25");
-    			attr_dev(input1, "step", "0.001");
+    			attr_dev(input1, "min", "0");
+    			attr_dev(input1, "max", "7000000000");
+                attr_dev(input1, "step", "100000");
     			add_location(input1, file$3, 939, 6, 34156);
     			add_location(br3, file$3, 940, 125, 34383);
     			attr_dev(div83, "class", "paneldesc svelte-1vzb36m");
@@ -26156,7 +26165,7 @@
     	let Time_to_death, logN, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_recovery_severe, D_hospital_lag, D_death, CFR, InterventionTime, OMInterventionAmt, InterventionAmt, Time, Xmax, dt, P_SEVERE, duration, state, Sol, P, timestep, tmax, deaths, total, total_infected, Iters, dIters, Pmax, lock, parsed, xScaleTime, xScaleTimeInv, indexToTime, checked, active, active_, ode_eqn, p_num_ind, get_d, milestones, log;
 
     	$$self.$$.update = ($$dirty = { logN: 1, Time_to_death: 1, D_infectious: 1, OMInterventionAmt: 1, I0: 1, R0: 1, D_incbation: 1, D_recovery_mild: 1, D_recovery_severe: 1, CFR: 1, InterventionTime: 1, InterventionAmt: 1, D_hospital_lag: 1, P_SEVERE: 1, dt: 1, N: 1, D_death: 1, duration: 1, Sol: 1, P: 1, checked: 1, tmax: 1, width: 1, active: 1, Iters: 1, Rt_s: 1, Tinc_s: 1, Tinf_s: 1, dIters: 1, indexToTime: 1 }) => {
-    		if ($$dirty.logN) { $$invalidate('N', N                 = Math.exp(logN)); }
+    		if ($$dirty.logN) { $$invalidate('N', N                 = logN); }
     		if ($$dirty.Time_to_death || $$dirty.D_infectious) { $$invalidate('D_death', D_death           = Time_to_death - D_infectious); }
     		if ($$dirty.OMInterventionAmt) { $$invalidate('InterventionAmt', InterventionAmt   = 1 - OMInterventionAmt); }
     		if ($$dirty.Time_to_death || $$dirty.logN || $$dirty.I0 || $$dirty.R0 || $$dirty.D_incbation || $$dirty.D_infectious || $$dirty.D_recovery_mild || $$dirty.D_recovery_severe || $$dirty.CFR || $$dirty.InterventionTime || $$dirty.InterventionAmt || $$dirty.D_hospital_lag || $$dirty.P_SEVERE) { $$invalidate('state', state = location.protocol + '//' + location.host + location.pathname + "?" + queryString.stringify({"Time_to_death":Time_to_death,
@@ -26203,22 +26212,22 @@
     		if ($$dirty.P) { $$invalidate('milestones', milestones = get_milestones(P)); }
     	};
 
-    	$$invalidate('Time_to_death', Time_to_death     = 32);
-    	$$invalidate('logN', logN              = Math.log(7e6));
+    	$$invalidate('Time_to_death', Time_to_death     = 15);
+    	$$invalidate('logN', logN              = 83000000);
     	$$invalidate('I0', I0                = 1);
-    	$$invalidate('R0', R0                = 2.2);
-    	$$invalidate('D_incbation', D_incbation       = 5.2);
-    	$$invalidate('D_infectious', D_infectious      = 2.9);
-    	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 2.9));
-    	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 2.9));
+    	$$invalidate('R0', R0                = 2);
+    	$$invalidate('D_incbation', D_incbation       = 5);
+    	$$invalidate('D_infectious', D_infectious      = 4);
+    	$$invalidate('D_recovery_mild', D_recovery_mild   = 7);
+    	$$invalidate('D_recovery_severe', D_recovery_severe = 14);
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 5);
-    	$$invalidate('CFR', CFR               = 0.02);
+    	$$invalidate('CFR', CFR               = 0.01);
     	$$invalidate('InterventionTime', InterventionTime  = 100);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 2/3);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 0.6);
     	Time              = 220;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 2);
-    	$$invalidate('P_SEVERE', P_SEVERE          = 0.2);
+    	$$invalidate('P_SEVERE', P_SEVERE          = 0.3);
     	$$invalidate('duration', duration          = 7*12*1e10);
     	$$invalidate('checked', checked = [true, true, false, true, true]);
     	$$invalidate('lock', lock           = false);
