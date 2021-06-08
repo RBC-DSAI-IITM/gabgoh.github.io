@@ -23020,7 +23020,7 @@
     			div66 = element("div");
     			div63 = element("div");
     			div62 = element("div");
-    			t143 = text("to decrease transmission by");
+    			t143 = text("decrease transmission by");
     			br1 = element("br");
     			t144 = space();
     			div65 = element("div");
@@ -23064,6 +23064,7 @@
     			t160 = space();
     			div82 = element("div");
     			t161 = text(t161_value);
+                // t161 = text('Hello')
     			t162 = space();
     			input1 = element("input");
     			t163 = space();
@@ -23892,10 +23893,12 @@
     			set_style(div63, "height", "20px");
     			set_style(div63, "text-align", "right");
     			add_location(div63, file$3, 840, 14, 29492);
-    			attr_dev(div64, "class", "slidertext svelte-1vzb36m");
+    			attr_dev(div64, "class", "caption");
     			add_location(div64, file$3, 844, 14, 29714);
-    			attr_dev(input0, "class", "range svelte-1vzb36m");
-    			attr_dev(input0, "type", "range");
+    			attr_dev(input0, "class", "");
+                attr_dev(input0, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+    			attr_dev(input0, "type", "number");
+                // attr_dev(input0, "placeholder", "0.660")
     			attr_dev(input0, "min", "0");
     			attr_dev(input0, "max", "1");
     			attr_dev(input0, "step", "0.01");
@@ -23983,14 +23986,17 @@
     			attr_dev(div81, "class", "paneldesc svelte-1vzb36m");
     			set_style(div81, "height", "30px");
     			add_location(div81, file$3, 937, 6, 34012);
-    			attr_dev(div82, "class", "slidertext svelte-1vzb36m");
+    			attr_dev(div82, "class", "caption");
     			add_location(div82, file$3, 938, 6, 34091);
-    			attr_dev(input1, "class", "range svelte-1vzb36m");
-    			set_style(input1, "margin-bottom", "8px");
-    			attr_dev(input1, "type", "range");
+    			attr_dev(input1, "class", "");
+                attr_dev(input1, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input1, "type", "number");
+                // attr_dev(input1, "placeholder", )
+    			// set_style(input1, "margin-bottom", "8px");
+    			// attr_dev(input1, "type", "range");
     			attr_dev(input1, "min", 5);
     			attr_dev(input1, "max", "25");
-    			attr_dev(input1, "step", "0.01");
+    			attr_dev(input1, "step", "0.001");
     			add_location(input1, file$3, 939, 6, 34156);
     			add_location(br3, file$3, 940, 125, 34383);
     			attr_dev(div83, "class", "paneldesc svelte-1vzb36m");
@@ -24000,8 +24006,11 @@
     			add_location(div83, file$3, 940, 6, 34264);
     			attr_dev(div84, "class", "slidertext svelte-1vzb36m");
     			add_location(div84, file$3, 941, 6, 34400);
-    			attr_dev(input2, "class", "range svelte-1vzb36m");
-    			attr_dev(input2, "type", "range");
+    			attr_dev(input2, "class", "");
+                attr_dev(input2, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input2, "type", "number");
+                attr_dev(input2, "placeholder", 1)
+    			// attr_dev(input2, "type", "range");
     			attr_dev(input2, "min", 1);
     			attr_dev(input2, "max", "10000");
     			attr_dev(input2, "step", "1");
@@ -24018,11 +24027,14 @@
     			add_location(div88, file$3, 946, 6, 34558);
     			attr_dev(div89, "class", "slidertext svelte-1vzb36m");
     			add_location(div89, file$3, 950, 6, 34839);
-    			attr_dev(input3, "class", "range svelte-1vzb36m");
-    			attr_dev(input3, "type", "range");
+    			attr_dev(input3, "class", "");
+                attr_dev(input3, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input3, "type", "number");
+                // attr_dev(input3, "placeholder", 2.2)
+    			// attr_dev(input3, "type", "range");
     			attr_dev(input3, "min", "0.01");
     			attr_dev(input3, "max", "10");
-    			attr_dev(input3, "step", "0.01");
+    			attr_dev(input3, "step", "0.1");
     			add_location(input3, file$3, 951, 6, 34880);
     			attr_dev(div90, "class", "column svelte-1vzb36m");
     			add_location(div90, file$3, 945, 4, 34531);
@@ -24035,12 +24047,16 @@
     			add_location(div92, file$3, 956, 6, 35055);
     			attr_dev(div93, "class", "slidertext svelte-1vzb36m");
     			add_location(div93, file$3, 957, 6, 35183);
-    			attr_dev(input4, "class", "range svelte-1vzb36m");
-    			set_style(input4, "margin-bottom", "8px");
-    			attr_dev(input4, "type", "range");
+                attr_dev(input4, "class", "");
+                attr_dev(input4, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input4, "type", "number");
+                // attr_dev(input4, "placeholder", 5)
+    			// attr_dev(input4, "class", "range svelte-1vzb36m");
+    			// set_style(input4, "margin-bottom", "8px");
+    			// attr_dev(input4, "type", "range");
     			attr_dev(input4, "min", 0.15);
     			attr_dev(input4, "max", "24");
-    			attr_dev(input4, "step", "0.0001");
+    			attr_dev(input4, "step", "1");
     			add_location(input4, file$3, 958, 6, 35251);
     			html_tag_2 = new HtmlTag(raw3_value, t186);
     			add_location(br6, file$3, 959, 167, 35532);
@@ -24051,11 +24067,14 @@
     			add_location(div94, file$3, 959, 6, 35371);
     			attr_dev(div95, "class", "slidertext svelte-1vzb36m");
     			add_location(div95, file$3, 960, 6, 35549);
-    			attr_dev(input5, "class", "range svelte-1vzb36m");
-    			attr_dev(input5, "type", "range");
+                attr_dev(input5, "class", "");
+                attr_dev(input5, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input5, "type", "number");
+    			// attr_dev(input5, "class", "range svelte-1vzb36m");
+    			// attr_dev(input5, "type", "range");
     			attr_dev(input5, "min", 0);
     			attr_dev(input5, "max", "24");
-    			attr_dev(input5, "step", "0.01");
+    			attr_dev(input5, "step", "1");
     			add_location(input5, file$3, 961, 6, 35605);
     			attr_dev(div96, "class", "column svelte-1vzb36m");
     			add_location(div96, file$3, 954, 4, 34973);
@@ -24070,12 +24089,15 @@
     			add_location(div99, file$3, 968, 6, 35839);
     			attr_dev(div100, "class", "slidertext svelte-1vzb36m");
     			add_location(div100, file$3, 969, 6, 35918);
-    			attr_dev(input6, "class", "range svelte-1vzb36m");
-    			set_style(input6, "margin-bottom", "8px");
-    			attr_dev(input6, "type", "range");
+                attr_dev(input6, "class", "");
+                attr_dev(input6, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input6, "type", "number");
+    			// attr_dev(input6, "class", "range svelte-1vzb36m");
+    			// set_style(input6, "margin-bottom", "8px");
+    			// attr_dev(input6, "type", "range");
     			attr_dev(input6, "min", 0);
     			attr_dev(input6, "max", "1");
-    			attr_dev(input6, "step", "0.0001");
+    			attr_dev(input6, "step", "0.01");
     			add_location(input6, file$3, 970, 6, 35979);
     			add_location(br8, file$3, 971, 133, 36215);
     			attr_dev(div101, "class", "paneldesc svelte-1vzb36m");
@@ -24085,11 +24107,14 @@
     			add_location(div101, file$3, 971, 6, 36088);
     			attr_dev(div102, "class", "slidertext svelte-1vzb36m");
     			add_location(div102, file$3, 972, 6, 36232);
-    			attr_dev(input7, "class", "range svelte-1vzb36m");
-    			attr_dev(input7, "type", "range");
+                attr_dev(input7, "class", "");
+                attr_dev(input7, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input7, "type", "number");
+    			// attr_dev(input7, "class", "range svelte-1vzb36m");
+    			// attr_dev(input7, "type", "range");
     			attr_dev(input7, "min", input7_min_value = (ctx.D_infectious)+0.1);
     			attr_dev(input7, "max", "100");
-    			attr_dev(input7, "step", "0.01");
+    			attr_dev(input7, "step", "1");
     			add_location(input7, file$3, 973, 6, 36289);
     			attr_dev(div103, "class", "column svelte-1vzb36m");
     			add_location(div103, file$3, 966, 4, 35755);
@@ -24101,12 +24126,15 @@
     			add_location(div105, file$3, 978, 6, 36486);
     			attr_dev(div106, "class", "slidertext svelte-1vzb36m");
     			add_location(div106, file$3, 979, 6, 36569);
-    			attr_dev(input8, "class", "range svelte-1vzb36m");
-    			set_style(input8, "margin-bottom", "8px");
-    			attr_dev(input8, "type", "range");
+                attr_dev(input8, "class", "");
+                attr_dev(input8, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input8, "type", "number");
+    			// attr_dev(input8, "class", "range svelte-1vzb36m");
+    			// set_style(input8, "margin-bottom", "8px");
+    			// attr_dev(input8, "type", "range");
     			attr_dev(input8, "min", 0.1);
     			attr_dev(input8, "max", "100");
-    			attr_dev(input8, "step", "0.01");
+    			attr_dev(input8, "step", "1");
     			add_location(input8, file$3, 980, 6, 36630);
     			add_location(br10, file$3, 981, 124, 36873);
     			attr_dev(div107, "class", "paneldesc svelte-1vzb36m");
@@ -24116,11 +24144,14 @@
     			add_location(div107, file$3, 981, 6, 36755);
     			attr_dev(div108, "class", "slidertext svelte-1vzb36m");
     			add_location(div108, file$3, 982, 6, 36890);
-    			attr_dev(input9, "class", "range svelte-1vzb36m");
-    			attr_dev(input9, "type", "range");
+                attr_dev(input9, "class", "");
+                attr_dev(input9, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input9, "type", "number");
+    			// attr_dev(input9, "class", "range svelte-1vzb36m");
+    			// attr_dev(input9, "type", "range");
     			attr_dev(input9, "min", 0.5);
     			attr_dev(input9, "max", "100");
-    			attr_dev(input9, "step", "0.01");
+    			attr_dev(input9, "step", "1");
     			add_location(input9, file$3, 983, 6, 36949);
     			attr_dev(div109, "class", "column svelte-1vzb36m");
     			add_location(div109, file$3, 976, 4, 36408);
@@ -24132,12 +24163,15 @@
     			add_location(div111, file$3, 988, 6, 37134);
     			attr_dev(div112, "class", "slidertext svelte-1vzb36m");
     			add_location(div112, file$3, 989, 6, 37215);
-    			attr_dev(input10, "class", "range svelte-1vzb36m");
-    			set_style(input10, "margin-bottom", "8px");
-    			attr_dev(input10, "type", "range");
+                attr_dev(input10, "class", "");
+                attr_dev(input10, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input10, "type", "number");
+    			// attr_dev(input10, "class", "range svelte-1vzb36m");
+    			// set_style(input10, "margin-bottom", "8px");
+    			// attr_dev(input10, "type", "range");
     			attr_dev(input10, "min", 0);
     			attr_dev(input10, "max", "1");
-    			attr_dev(input10, "step", "0.0001");
+    			attr_dev(input10, "step", "0.01");
     			add_location(input10, file$3, 990, 6, 37281);
     			add_location(br12, file$3, 991, 120, 37514);
     			attr_dev(div113, "class", "paneldesc svelte-1vzb36m");
@@ -24147,11 +24181,14 @@
     			add_location(div113, file$3, 991, 6, 37400);
     			attr_dev(div114, "class", "slidertext svelte-1vzb36m");
     			add_location(div114, file$3, 992, 6, 37531);
-    			attr_dev(input11, "class", "range svelte-1vzb36m");
-    			attr_dev(input11, "type", "range");
+                attr_dev(input11, "class", "");
+                attr_dev(input11, "style", "width: 60px; font-size: 15.5px; color: rgb(119, 119, 119);")
+                attr_dev(input11, "type", "number");
+    			// attr_dev(input11, "class", "range svelte-1vzb36m");
+    			// attr_dev(input11, "type", "range");
     			attr_dev(input11, "min", 0.5);
     			attr_dev(input11, "max", "100");
-    			attr_dev(input11, "step", "0.01");
+    			attr_dev(input11, "step", "1");
     			add_location(input11, file$3, 993, 6, 37589);
     			attr_dev(div115, "class", "column svelte-1vzb36m");
     			add_location(div115, file$3, 986, 4, 37055);
